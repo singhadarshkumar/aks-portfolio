@@ -69,8 +69,8 @@ body{
   background: #333;
   transform: translateY(-2px);
 }
-.aks-work-gallery{
-
+.aks-work-gallery h3{
+  font-size: 40px;
 }
 @keyframes bg-animation {
     0%{background-position: 0% 0%;}
