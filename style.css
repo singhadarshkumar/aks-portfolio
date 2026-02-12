@@ -46,7 +46,7 @@ body{
 .darkmode .aks-banner h1 span{
     background-image: url("./dark-bg-text.jpg");
 }
-.aks-banner h2 strong, .intro-box b{
+.aks-banner h2 strong, .intro-box b, .intro-box span, .aks-work-gallery h4 span{
   color: #64370b;
 }
 .aks-quotes h3{
@@ -80,12 +80,62 @@ body{
   border-radius: 30px;
   background-color: #f7dfc7;
 }
+.footer {
+  background: #111;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.footer h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.contact-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #64370b;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #8a4f18;
+  transform: translateY(-2px);
+}
+
+.copyright {
+  margin-top: 30px;
+  font-size: 14px;
+  opacity: 0.7;
+}
 .aks-work-gallery h3 span{
   color: var(--col-primary);
   -webkit-text-stroke: 1px rgb(140, 40, 40);
-}
-.intro-box span, .aks-work-gallery h4 span{
-  color: #64370b;
 }
 .aks-work-gallery .prod-img.blur-set{
   filter: blur(5px);
@@ -129,7 +179,6 @@ body{
 .aks-work-gallery .card-hover .prod-text img{
   width: 16px;
 }
-
 .aks-mantra h3{
   font-size: 72px;
   font-weight: 700;
