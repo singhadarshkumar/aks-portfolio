@@ -94,10 +94,15 @@ body{
 .aks-work-gallery .prod-img.blur-set{
   filter: blur(5px);
 }
+.aks-work-gallery .prod-img{
+  background-color: var(--col-primary);
+  border-radius: 20px;
+}
 .aks-work-gallery .prod-img img{
   border-radius: 30px;
   corner-shape: scoop;
   transition: 0.3s all ease-in-out;
+  transform: scale(0.95);
 }
 .aks-work-gallery .prod-text{
   color: #64370b;
@@ -111,11 +116,19 @@ body{
   transform: translate(-50%, -50%);
   transition: 0.3s all ease-in-out;
 }
+.aks-work-gallery .postion-relative.prod-text{
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transform: none;
+  width: fit-content;
+}
 .aks-work-gallery .card-hover:hover .prod-text{
   opacity: 1;
 }
 .aks-work-gallery .card-hover:hover .prod-img img{
   border-radius: 0px;
+  transform: scale(1);
 }
 .aks-work-gallery .card-hover .prod-text img{
   width: 16px;
