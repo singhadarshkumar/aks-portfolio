@@ -276,14 +276,6 @@ body{
 .aks-tag img{
   width: 28px;
 }
-@media screen and (max-width: 767.98px){
-  .aks-mantra .line-horzi::after{
-    width: 70%;
-  }
-  .aks-mantra h3{
-    font-size: 40px;
-  }
-}
 .contact-left h2 {
   font-size: 60px;
   font-weight: 700;
@@ -312,4 +304,15 @@ body{
 .contact-item a:hover {
   color: #8a4f18;
   transform: translateX(5px);
+}
+@media screen and (max-width: 767.98px){
+  .aks-mantra .line-horzi::after{
+    width: 70%;
+  }
+  .aks-mantra h3{
+    font-size: 40px;
+  }
+  .contact-left h2 {
+    font-size: 40px;
+  }
 }
