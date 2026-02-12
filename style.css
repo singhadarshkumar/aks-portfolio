@@ -23,7 +23,7 @@ body{
     font-family: var(--font-family);
     color: var(--col-secondary);
 }
-.aks-banner{
+.aks-banner, .aks-quotes, .aks-mantra, .aks-tag{
     background-color: var(--col-primary);
 }
 .aks-banner h1{
@@ -48,9 +48,6 @@ body{
 }
 .aks-banner h2 strong, .intro-box b{
   color: #64370b;
-}
-.aks-quotes{
-  background-color: var(--col-primary);
 }
 .aks-quotes h3{
   font-size: 40px;
@@ -77,7 +74,6 @@ body{
     50%{background-position: 100% 100%;}
     100%{background-position: 0% 0%;}
 }
-
 .intro-box{
   border: 2px solid #64370b;
   corner-shape: scoop;
@@ -134,3 +130,112 @@ body{
   width: 16px;
 }
 
+.aks-mantra h3{
+  font-size: 72px;
+  font-weight: 700;
+  background: linear-gradient(
+    to bottom,
+    #64370b,
+    #a35a1f
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 2;
+}
+.aks-mantra .mantra-txt{
+  width: fit-content;
+  z-index: 2;
+  font-size: 18px;
+  background-color: var(--col-primary);
+}
+.aks-mantra .line-horzi::after{
+  position: absolute;
+  content: "";
+  background-image: url("./line-img.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 6px;
+  z-index: 1;
+}
+.aks-mantra .more-txt{
+  font-size: 22px;
+}
+.aks-mantra .more-txt span{
+  color: #64370b;
+  font-weight: 700;
+}
+.aks-mantra h4{
+  font-size: 48px;
+  font-size: 700;
+}
+.brown-grad-btn{
+  background: linear-gradient(
+    to bottom,
+    #64370b,
+    #a35a1f
+  );
+  font-size: 16px;
+  color: #64370b;
+  text-decoration: none;
+}
+.aks-mantra .detail-text h5{
+  white-space: nowrap;
+}
+.aks-detail{
+  background-color: #64370b;
+  transition: 0.3s all ease-in-out;
+}
+.aks-detail h6{
+  font-size: 20px;
+}
+.aks-detail h3{
+  font-weight: 700;
+  font-size: 40px;
+}
+.aks-detail:hover{
+  background-color: white
+}
+.aks-detail:hover h3, .aks-detail:hover h6{
+  color: #64370b !important;
+}
+.aks-detail:hover .img-5, .aks-detail:hover .img-4, .aks-detail:hover .img-3, .aks-detail:hover .img-2, .aks-detail:hover .img-1{
+  display: block !important;
+}
+.aks-detail .img-5{
+  bottom: -26px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.aks-detail .img-4{
+  bottom: 0px;
+  left: 40px;
+  transform: translate(-50%, -50%);
+}
+.aks-detail .img-3{
+  bottom: -70px;
+  right: 0%;
+  transform: translate(-50%, -50%);
+}
+.aks-detail .img-2{
+  top: 20px;
+  right: 10%;
+  transform: translate(-50%, -50%);
+}
+.aks-detail .img-1{
+  left: 25%;
+  top: 30px;
+  transform: translate(-50%, -50%);
+}
+.aks-tag img{
+  width: 28px;
+}
+@media screen and (max-width: 767.98px){
+  .aks-mantra .line-horzi::after{
+    width: 70%;
+  }
+}
