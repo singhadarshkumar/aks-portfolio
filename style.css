@@ -1,0 +1,129 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}  
+:root{
+    --font-family: "Reddit Sans", sans-serif;
+    --col-primary: #f4eae0;
+    --col-secondary: #272625;
+}
+.saira-stencil-one-regular {
+    font-family: "Saira Stencil One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.darkmode{
+    --col-primary: #272625;
+    --col-secondary: #f4eae0;
+}
+body{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font-family);
+    color: var(--col-secondary);
+}
+.aks-banner{
+    background-color: var(--col-primary);
+}
+.aks-banner h1{
+    font-size: 64px;
+    font-weight: 600;
+    color: var(--col-secondary);
+}
+.aks-banner h1 img{
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.aks-banner h1 span{
+    background-image: url("./max-kukurudziak-fzfDRXUya-s-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    animation: bg-animation 30s cubic-bezier(0.3, 0, 0.7, 1) infinite;
+    -webkit-background-clip: text; /* Chrome, Safari */
+    -webkit-text-fill-color: transparent;
+}
+.darkmode .aks-banner h1 span{
+    background-image: url("./dark-bg-text.jpg");
+}
+.aks-banner h2 strong, .intro-box b{
+  color: #64370b;
+}
+.aks-quotes{
+  background-color: var(--col-primary);
+}
+.aks-quotes h3{
+  font-size: 40px;
+  color: #64370b;
+}
+.cv-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #111;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+.cv-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+.aks-work-gallery{
+
+}
+@keyframes bg-animation {
+    0%{background-position: 0% 0%;}
+    50%{background-position: 100% 100%;}
+    100%{background-position: 0% 0%;}
+}
+
+.intro-box{
+  border: 2px solid #64370b;
+  corner-shape: scoop;
+  border-radius: 30px;
+  background-color: #f7dfc7;
+}
+.intro-box span{
+  color: #64370b;
+}
+  
+  /* speeds */
+  .speed-slow .logo-track {
+    animation-duration: 35s;
+  }
+  
+  .speed-fast .logo-track {
+    animation-duration: 20s;
+  }
+  
+  /* reverse direction */
+  .reverse .logo-track {
+    animation-name: scroll-right;
+  }
+  
+  /* animations */
+  @keyframes scroll-left {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  
+  @keyframes scroll-right {
+    from { transform: translateX(-50%); }
+    to   { transform: translateX(0); }
+  }
+  .logo-row:hover .logo-track {
+    animation-play-state: paused;
+  }
+  .logo-row {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 12%,
+      black 88%,
+      transparent
+    );
+  }
+  .speed-medium { animation-duration: 10s; }
+
+
